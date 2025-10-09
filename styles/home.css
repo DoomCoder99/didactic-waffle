@@ -1,0 +1,83 @@
+.auth-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-block: 3rem;
+  background: radial-gradient(120% 120% at 50% 0%, rgba(90, 52, 221, 0.08) 0%, transparent 60%);
+}
+
+.auth-card {
+  border-radius: 1.5rem;
+  box-shadow: 0 24px 48px -28px rgba(42, 32, 94, 0.45);
+  background-color: #fff;
+  padding: 2.25rem;
+  border: 1px solid rgba(90, 52, 221, 0.08);
+}
+
+.auth-card__header {
+  margin-bottom: 2rem;
+}
+
+.auth-tabs .nav-link {
+  color: #55536d;
+  font-weight: 600;
+  padding-block: 0.75rem;
+}
+
+.auth-tabs .nav-link.active {
+  color: #fff;
+  background: linear-gradient(135deg, #5a34dd, #f25f8d);
+  box-shadow: 0 12px 24px -18px rgba(90, 52, 221, 0.8);
+}
+
+.auth-input-group .input-group-text {
+  background-color: rgba(90, 52, 221, 0.08);
+  color: #5a34dd;
+  font-weight: 600;
+  border: none;
+}
+
+.auth-input-group .form-control {
+  padding-block: 0.75rem;
+  font-weight: 500;
+}
+
+.auth-divider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-block: 1.75rem;
+  color: #55536d;
+}
+
+.auth-divider::before,
+.auth-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #eceffd;
+}
+
+.auth-alt-actions .btn {
+  font-weight: 600;
+}
+
+.brand-lockup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-top: 2.5rem;
+  color: #55536d;
+  font-weight: 600;
+}
+
+.brand-lockup__accent {
+  color: #f25f8d;
+}
+
+@media (min-width: 576px) {
+  .auth-card {
+    padding: 2.5rem 3rem;
+  }
+}
