@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SBI Life SmartCare - OTP Delivery</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/home.css" />
+  </head>
+  <body>
+    <main class="auth-wrapper">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-5 col-md-7">
+            <section class="auth-card bg-surface">
+              <header class="auth-card__header text-center">
+                <span class="badge rounded-pill badge-soft-brand text-uppercase mb-3">SmartCare</span>
+                <h1 class="h3 fw-bold mb-2">Welcome! Choose where you want to receive OTP</h1>
+                <p class="mb-0 text-muted">Log in with the number registered on your policy.</p>
+              </header>
+
+              <nav class="auth-tabs mb-4">
+                <div class="nav nav-pills nav-fill gap-2" role="tablist">
+                  <button class="nav-link active" type="button">Mobile Number</button>
+                  <button class="nav-link" type="button">E-Mail</button>
+                  <button class="nav-link" type="button">Policy Number</button>
+                </div>
+              </nav>
+
+              <form class="d-grid gap-3">
+                <div class="form-group">
+                  <label class="form-label fw-semibold" for="mobileNumber">Enter registered mobile no.</label>
+                  <div class="input-group auth-input-group">
+                    <span class="input-group-text" id="countryCode" aria-hidden="true">🇮🇳</span>
+                    <span class="input-group-text" aria-hidden="true">+91</span>
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="mobileNumber"
+                      name="mobileNumber"
+                      inputmode="tel"
+                      placeholder="Enter your mobile number"
+                      aria-describedby="countryCode"
+                    />
+                  </div>
+                </div>
+
+                <div class="row g-3">
+                  <div class="col-sm-6">
+                    <label class="form-label fw-semibold" for="dateOfBirth">Date of Birth</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="dateOfBirth"
+                      name="dateOfBirth"
+                      placeholder="DD/MM/YYYY"
+                      inputmode="numeric"
+                    />
+                  </div>
+                  <div class="col-sm-6">
+                    <label class="form-label fw-semibold" for="captcha">Captcha</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="captcha"
+                      name="captcha"
+                      placeholder="I am not a robot"
+                    />
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-brand btn-lg w-100">Send OTP</button>
+              </form>
+
+              <div class="auth-divider text-uppercase small">or</div>
+
+              <div class="auth-alt-actions d-grid gap-2">
+                <button type="button" class="btn btn-outline-brand w-100">I↔ Login using M-Pin</button>
+                <button type="button" class="btn btn-outline-brand w-100">Login using Bio-metrics</button>
+              </div>
+
+              <div class="brand-lockup">
+                <span class="text-brand">SBI Life</span>
+                <span class="brand-lockup__accent">SmartCare</span>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
